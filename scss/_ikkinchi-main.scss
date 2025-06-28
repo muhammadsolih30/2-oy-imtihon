@@ -1,0 +1,53 @@
+.ikkinchi-main {
+  display: flex;
+  width: 90%;
+  height: 200px;
+  margin: 130px auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  position: relative;
+  border-radius: 10px;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    height: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .bir-xil {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .chiziq {
+      width: 1px;
+      height: 160px;
+      background-color: black;
+      position: relative;
+      left: 35%;
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+
+  .son {
+    p {
+      font-size: 20px;
+      color: #4f5665;
+    }
+  }
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+}

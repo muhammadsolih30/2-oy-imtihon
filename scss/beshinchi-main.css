@@ -1,0 +1,776 @@
+@charset "UTF-8";
+* {
+  font-family: Rubik;
+}
+
+.beshinchi-bulim {
+  /* ...siz bergan kod o‘zgarishsiz... */
+}
+.beshinchi-bulim .rasim-xarita {
+  position: relative;
+  overflow: hidden;
+  /* ---------- MARKER ASOSI ---------- */
+  /* ---------- HAR BIR METKA KOORDINATASI (% bilan) ---------- */
+}
+.beshinchi-bulim .rasim-xarita img {
+  width: 100%;
+  display: block;
+}
+.beshinchi-bulim .rasim-xarita .marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #f53838;
+  border-radius: 50%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  animation: pulse 2.8s infinite ease-in-out;
+  /* tashqi halqa */
+}
+.beshinchi-bulim .rasim-xarita .marker::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #f53838;
+  opacity: 0.25;
+  animation: ripple 2.8s infinite ease-in-out;
+}
+.beshinchi-bulim .rasim-xarita .m1 {
+  top: 28%;
+  left: 15%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m2 {
+  top: 20%;
+  left: 32%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m3 {
+  top: 38%;
+  left: 25%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m4 {
+  top: 44%;
+  left: 41%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m5 {
+  top: 54%;
+  left: 30%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m6 {
+  top: 65%;
+  left: 22%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m7 {
+  top: 32%;
+  left: 52%;
+  animation-delay: 0.2s;
+}
+.beshinchi-bulim .rasim-xarita .m8 {
+  top: 46%;
+  left: 57%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m9 {
+  top: 58%;
+  left: 48%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m10 {
+  top: 69%;
+  left: 55%;
+  animation-delay: 1.2s;
+}
+.beshinchi-bulim .rasim-xarita .m11 {
+  top: 32%;
+  left: 72%;
+  animation-delay: 0.3s;
+}
+.beshinchi-bulim .rasim-xarita .m12 {
+  top: 44%;
+  left: 78%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m13 {
+  top: 58%;
+  left: 70%;
+  animation-delay: 0.1s;
+}
+.beshinchi-bulim .rasim-xarita .m14 {
+  top: 72%;
+  left: 80%;
+  animation-delay: 0.4s;
+}
+.beshinchi-bulim .rasim-xarita .m15 {
+  top: 25%;
+  left: 85%;
+  animation-delay: 0.2s;
+}
+
+/* ---------- ANIMATSIYALAR ---------- */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.45;
+  }
+  60% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+/* rang va radiuslar o‘zgarmadi */
+.beshinchi-bulim {
+  /* … avvalgi kodlar … */
+}
+.beshinchi-bulim .rasim-xarita {
+  position: relative;
+  /* -------- 15 ta marker koordinatasi + harakati -------- */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+  /* har bir marker uchun maxsus yo‘l */
+}
+.beshinchi-bulim .rasim-xarita .marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #f53838;
+  border-radius: 50%;
+  background: #fff;
+  /* ikkita animatsiya: pulse + moveX  */
+  animation: pulse 2.8s infinite ease-in-out;
+}
+.beshinchi-bulim .rasim-xarita .marker::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #f53838;
+  opacity: 0.25;
+  animation: ripple 2.8s infinite ease-in-out;
+}
+.beshinchi-bulim .rasim-xarita .m1 {
+  top: 56%;
+  left: 19%;
+  animation: pulse 2.8s infinite ease-in-out, move1 16s 3s infinite ease-in-out alternate;
+}
+@keyframes move1 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(28px, 7.6px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(70px, 19px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(42px, 11.4px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m2 {
+  top: 22%;
+  left: 32%;
+  animation: pulse 2.8s infinite ease-in-out, move2 14s 0s infinite ease-in-out alternate;
+}
+@keyframes move2 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(10.4px, -45.6px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(26px, -114px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(15.6px, -68.4px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m3 {
+  top: 20%;
+  left: 79%;
+  animation: pulse 2.8s infinite ease-in-out, move3 14s 0s infinite ease-in-out alternate;
+}
+@keyframes move3 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-38px, 52.4px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-95px, 131px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-57px, 78.6px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m4 {
+  top: 43%;
+  left: 68%;
+  animation: pulse 2.8s infinite ease-in-out, move4 15s 0s infinite ease-in-out alternate;
+}
+@keyframes move4 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-25.2px, -48.8px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-63px, -122px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-37.8px, -73.2px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m5 {
+  top: 64%;
+  left: 59%;
+  animation: pulse 2.8s infinite ease-in-out, move5 12s 1s infinite ease-in-out alternate;
+}
+@keyframes move5 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(32.4px, -0.8px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(81px, -2px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(48.6px, -1.2px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m6 {
+  top: 46%;
+  left: 58%;
+  animation: pulse 2.8s infinite ease-in-out, move6 13s 0s infinite ease-in-out alternate;
+}
+@keyframes move6 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(24.4px, 42px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(61px, 105px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(36.6px, 63px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m7 {
+  top: 65%;
+  left: 82%;
+  animation: pulse 2.8s infinite ease-in-out, move7 17s 1s infinite ease-in-out alternate;
+}
+@keyframes move7 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-52.8px, -28px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-132px, -70px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-79.2px, -42px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m8 {
+  top: 17%;
+  left: 48%;
+  animation: pulse 2.8s infinite ease-in-out, move8 13s 2s infinite ease-in-out alternate;
+}
+@keyframes move8 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-16px, 17.6px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-40px, 44px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-24px, 26.4px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m9 {
+  top: 50%;
+  left: 84%;
+  animation: pulse 2.8s infinite ease-in-out, move9 17s 3s infinite ease-in-out alternate;
+}
+@keyframes move9 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(19.2px, -21.2px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(48px, -53px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(28.8px, -31.8px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m10 {
+  top: 42%;
+  left: 83%;
+  animation: pulse 2.8s infinite ease-in-out, move10 14s 3s infinite ease-in-out alternate;
+}
+@keyframes move10 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-40.8px, 55.2px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-102px, 138px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-61.2px, 82.8px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m11 {
+  top: 61%;
+  left: 15%;
+  animation: pulse 2.8s infinite ease-in-out, move11 18s 3s infinite ease-in-out alternate;
+}
+@keyframes move11 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(36px, -14px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(90px, -35px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(54px, -21px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m12 {
+  top: 50%;
+  left: 59%;
+  animation: pulse 2.8s infinite ease-in-out, move12 17s 2s infinite ease-in-out alternate;
+}
+@keyframes move12 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(26.8px, -38.8px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(67px, -97px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(40.2px, -58.2px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m13 {
+  top: 17%;
+  left: 46%;
+  animation: pulse 2.8s infinite ease-in-out, move13 18s 3s infinite ease-in-out alternate;
+}
+@keyframes move13 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(52.4px, -16px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(131px, -40px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(78.6px, -24px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m14 {
+  top: 25%;
+  left: 35%;
+  animation: pulse 2.8s infinite ease-in-out, move14 15s 1s infinite ease-in-out alternate;
+}
+@keyframes move14 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-52px, 58px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-130px, 145px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-78px, 87px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+.beshinchi-bulim .rasim-xarita .m15 {
+  top: 21%;
+  left: 52%;
+  animation: pulse 2.8s infinite ease-in-out, move15 11s 1s infinite ease-in-out alternate;
+}
+@keyframes move15 {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(-14.4px, -10px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-36px, -25px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(-21.6px, -15px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+}
+
+/* ------- Pulse & Ripple (o‘zgarmagan) -------- */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+}
+@keyframes ripple {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.45;
+  }
+  60% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+.oltinchi-bulim {
+  background-color: rgba(244, 242, 240, 0.196);
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 100px;
+}
+.oltinchi-bulim .elimit {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.oltinchi-bulim img {
+  max-width: 100%;
+  height: auto;
+  transition: 0.3s;
+}
+.oltinchi-bulim img:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+@media (max-width: 992px) {
+  .oltinchi-bulim .elimit {
+    height: auto;
+    justify-content: center;
+  }
+  .oltinchi-bulim img {
+    width: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .oltinchi-bulim .elimit {
+    flex-direction: column;
+    align-items: center;
+  }
+  .oltinchi-bulim img {
+    width: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .oltinchi-bulim img {
+    width: 60px;
+  }
+}
+
+.testimonial-section {
+  background-color: rgba(244, 242, 240, 0.196);
+  text-align: center;
+  padding: 100px 20px;
+}
+.testimonial-section h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #0b132a;
+  margin-bottom: 25px;
+}
+.testimonial-section .description {
+  font-size: 16px;
+  color: #4f5665;
+  margin-bottom: 40px;
+}
+.testimonial-section .uch-ta {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  right: -20px;
+}
+.testimonial-section .uch-ta .cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
+  margin-left: 80px;
+}
+.testimonial-section .uch-ta .cards-container .card {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  text-align: left;
+  transition: 0.3s ease;
+  height: auto;
+}
+.testimonial-section .uch-ta .cards-container .card:hover {
+  border: 2px solid red;
+}
+.testimonial-section .uch-ta .cards-container .card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.testimonial-section .uch-ta .cards-container .card .card-header .user-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.testimonial-section .uch-ta .cards-container .card .card-header .user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.testimonial-section .uch-ta .cards-container .card .card-header .user-info .details {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-section .uch-ta .cards-container .card .card-header .user-info .details strong {
+  font-weight: 600;
+  color: #0b132a;
+}
+.testimonial-section .uch-ta .cards-container .card .card-header .user-info .details span {
+  font-size: 12px;
+  color: #4f5665;
+}
+.testimonial-section .uch-ta .cards-container .card .card-header .stars {
+  color: orange;
+  font-weight: bold;
+}
+.testimonial-section .uch-ta .cards-container .card .card-text {
+  font-size: 16px;
+  color: #0b132a;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.testimonial-section .utish-belgisi {
+  width: 100%;
+  margin-top: 70px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.testimonial-section .utish-belgisi .pagination {
+  display: flex;
+  gap: 10px;
+}
+.testimonial-section .utish-belgisi .pagination .active {
+  width: 45px;
+  height: 15px;
+  border-radius: 25px;
+  background-color: rgb(245, 56, 56);
+}
+.testimonial-section .utish-belgisi .pagination .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(221, 224, 228);
+}
+.testimonial-section .utish-belgisi .navigation {
+  display: flex;
+  gap: 20px;
+  transition: 0.5s ease;
+}
+.testimonial-section .utish-belgisi .navigation .nav-btn {
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgb(245, 56, 56);
+  color: rgb(245, 56, 56);
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+.testimonial-section .utish-belgisi .navigation .nav-btn:hover {
+  background-color: rgb(245, 56, 56);
+  color: white;
+  cursor: pointer;
+}
+.testimonial-section .utish-belgisi .navigation .right1:hover {
+  transform: translateX(10px);
+}
+.testimonial-section .utish-belgisi .navigation .left1:hover {
+  transform: translateX(-10px);
+}
+@media (max-width: 1200px) {
+  .testimonial-section .cards-container {
+    margin-left: 20px;
+    justify-content: center;
+  }
+  .testimonial-section .card {
+    width: 350px !important;
+  }
+}
+@media (max-width: 992px) {
+  .testimonial-section .card {
+    width: 100% !important;
+  }
+  .testimonial-section .utish-belgisi {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .testimonial-section .navigation .nav-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial-section h2 {
+    font-size: 28px;
+  }
+  .testimonial-section .description {
+    font-size: 14px;
+  }
+  .testimonial-section .card-text {
+    font-size: 14px;
+  }
+  .testimonial-section .navigation .nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .testimonial-section h2 {
+    font-size: 22px;
+  }
+  .testimonial-section .card {
+    padding: 15px;
+  }
+  .testimonial-section .card-text {
+    font-size: 13px;
+  }
+  .testimonial-section .pagination .active {
+    width: 30px;
+  }
+}/*# sourceMappingURL=beshinchi-main.css.map */

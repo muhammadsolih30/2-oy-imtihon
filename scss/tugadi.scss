@@ -1,0 +1,222 @@
+// SCSS without @mixin — all properties written explicitly
+
+.third {
+  background-color: rgb(247, 247, 247);
+
+  /* -------------------- SUBSCRIBE BANNER -------------------- */
+  .special {
+    max-width: 1140px;
+    min-height: 233px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(114px);
+    -webkit-backdrop-filter: blur(114px);
+    box-shadow: 0 5px 20px rgba(13, 16, 37, 0.08);
+    padding: 58px 70px;
+    position: relative;
+    top: -125px;
+    display: grid;
+    align-items: center;
+    transition: all 0.3s ease;
+
+    .hard1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      /* -------- text bloc -------- */
+      .hard2 {
+        h1 {
+          font-weight: 500;
+          font-size: 35px;
+          line-height: 45px;
+          color: #0B132A;
+
+          @media (max-width: 768px) {
+            font-size: 30px;
+            line-height: 45px;
+          }
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          color: #4F5665;
+          padding-top: 20px;
+
+          @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+      }
+
+      /* -------- button bloc -------- */
+      .button-122 {
+        .hard_btn {
+          button {
+            /* general_button replacement */
+            padding: 18px 65px;
+            background-color: #F53838;
+            border-radius: 10px;
+            line-height: 16px;
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 15px 40px rgba(244, 63, 63, 0.393);
+
+            &:hover {
+              background-color: darken(#F53838, 8%);
+            }
+
+            @media (max-width: 730px) {
+              padding: 14px 55px;
+              font-size: 14px;
+            }
+
+            @media (max-width: 660px) {
+              padding: 14px 25px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+ 
+  .footer {
+    padding-top: 65px;
+    position: relative;
+    top: -100px;
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .foot1 {
+        .face1 {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          img {
+            height: 36px;
+            max-width: 35px;
+          }
+
+          h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 100%;
+            color: #0B132A;
+          }
+
+          p {
+            padding-top: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #4F5665;
+
+            span {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 30px;
+              color: #4F5665;
+            }
+          }
+        }
+
+        .face2 {
+          display: flex;
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #AFB5C0;
+          }
+
+          div {
+            padding: 30px 0 5px;
+            display: flex;
+            align-items: center;
+
+            justify-content: start;
+            img {
+              width: 100%;
+              height: 100%;
+              transition: transform 0.3s;
+              cursor: pointer;
+
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
+
+      /* ----- right columns (Product / Engage / Earn) ----- */
+      .foot2 {
+        display: flex;
+        gap: 126px;
+        flex-wrap: wrap;
+
+        .footlar {
+          .footlar_div {
+            h2 {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 30px;
+              color: #0B132A;
+              padding-bottom: 10px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 30px;
+              color: #4F5665;
+              margin-bottom: 4px;
+              cursor: pointer;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ---------------- RESPONSIVE ---------------- */
+  @media (max-width: 992px) {
+    .special {
+      padding: 40px 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .special .hard1 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .footer .foot2 {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
+.testimonial-section{
+    padding-bottom: 170px;
+}
