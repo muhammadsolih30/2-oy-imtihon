@@ -1,9 +1,6 @@
-// SCSS without @mixin — all properties written explicitly
-
 .third {
   background-color: rgb(247, 247, 247);
 
-  /* -------------------- SUBSCRIBE BANNER -------------------- */
   .special {
     max-width: 1140px;
     min-height: 233px;
@@ -24,13 +21,12 @@
       justify-content: space-between;
       align-items: center;
 
-      /* -------- text bloc -------- */
       .hard2 {
         h1 {
           font-weight: 500;
           font-size: 35px;
           line-height: 45px;
-          color: #0B132A;
+          color: #0b132a;
 
           @media (max-width: 768px) {
             font-size: 30px;
@@ -42,7 +38,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 30px;
-          color: #4F5665;
+          color: #4f5665;
           padding-top: 20px;
 
           @media (max-width: 768px) {
@@ -52,13 +48,11 @@
         }
       }
 
-      /* -------- button bloc -------- */
       .button-122 {
         .hard_btn {
           button {
-            /* general_button replacement */
             padding: 18px 65px;
-            background-color: #F53838;
+            background-color: #f53838;
             border-radius: 10px;
             line-height: 16px;
             font-size: 16px;
@@ -70,7 +64,7 @@
             box-shadow: 0 15px 40px rgba(244, 63, 63, 0.393);
 
             &:hover {
-              background-color: darken(#F53838, 8%);
+              background-color: darken(#f53838, 8%);
             }
 
             @media (max-width: 730px) {
@@ -88,7 +82,6 @@
     }
   }
 
- 
   .footer {
     padding-top: 65px;
     position: relative;
@@ -114,7 +107,7 @@
             font-weight: 500;
             font-size: 20px;
             line-height: 100%;
-            color: #0B132A;
+            color: #0b132a;
           }
 
           p {
@@ -122,13 +115,13 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 30px;
-            color: #4F5665;
+            color: #4f5665;
 
             span {
               font-weight: 500;
               font-size: 16px;
               line-height: 30px;
-              color: #4F5665;
+              color: #4f5665;
             }
           }
         }
@@ -140,7 +133,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 30px;
-            color: #AFB5C0;
+            color: #afb5c0;
           }
 
           div {
@@ -175,7 +168,7 @@
               font-weight: 500;
               font-size: 18px;
               line-height: 30px;
-              color: #0B132A;
+              color: #0b132a;
               padding-bottom: 10px;
             }
 
@@ -183,7 +176,7 @@
               font-weight: 400;
               font-size: 16px;
               line-height: 30px;
-              color: #4F5665;
+              color: #4f5665;
               margin-bottom: 4px;
               cursor: pointer;
 
@@ -217,6 +210,6 @@
     }
   }
 }
-.testimonial-section{
-    padding-bottom: 170px;
+.testimonial-section {
+  padding-bottom: 170px;
 }

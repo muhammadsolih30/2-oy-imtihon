@@ -273,11 +273,17 @@ header {
   border: none;
   box-shadow: #f53838 0px 40px 40px -20px, #f53838 0px 30px 60px -30px;
   cursor: pointer;
+  transition: .5s ease;
+}
+.birinchi-main .text-lar .uchunchi-bt:hover{
+  transform: scale(1.3);
+  box-shadow: #f53838 0px 40px 60px -10px, #f53838 0px 30px 60px -30px;
 }
 @media (max-width: 1215px) {
   .birinchi-main .text-lar .uchunchi-bt {
     width: 200px;
     height: 50px;
+    margin-left: 20px;
   }
 }
 @media (max-width: 750px) {
@@ -704,10 +710,12 @@ header {
   justify-content: center;
   margin: 20px auto;
   cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: .4s ease;
 }
 .turtinchi-bulim .uchta-elimit .birinchi .ikkinchi-h1 .nechinchidir-botton:hover {
   background-color: #f53838;
+  transform: scale(1.3);
+  box-shadow: #f53838 0px 40px 60px -10px, #f53838 0px 30px 60px -30px;
 }
 .turtinchi-bulim .uchta-elimit .birinchi .ikkinchi-h1 .nechinchidir-botton:hover b {
   color: white;
