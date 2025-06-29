@@ -710,7 +710,7 @@ header {
   justify-content: center;
   margin: 20px auto;
   cursor: pointer;
-  transition: .4s ease;
+  transition: .5s ease;
 }
 .turtinchi-bulim .uchta-elimit .birinchi .ikkinchi-h1 .nechinchidir-botton:hover {
   background-color: #f53838;
