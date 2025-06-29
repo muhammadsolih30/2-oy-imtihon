@@ -3,14 +3,10 @@
   font-family: Rubik;
 }
 
-.beshinchi-bulim {
-  /* ...siz bergan kod o‘zgarishsiz... */
-}
 .beshinchi-bulim .rasim-xarita {
   position: relative;
   overflow: hidden;
-  /* ---------- MARKER ASOSI ---------- */
-  /* ---------- HAR BIR METKA KOORDINATASI (% bilan) ---------- */
+
 }
 .beshinchi-bulim .rasim-xarita img {
   width: 100%;
@@ -25,7 +21,7 @@
   background: #fff;
   transform: translate(-50%, -50%);
   animation: pulse 2.8s infinite ease-in-out;
-  /* tashqi halqa */
+
 }
 .beshinchi-bulim .rasim-xarita .marker::after {
   content: "";
